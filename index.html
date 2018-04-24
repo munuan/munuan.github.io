@@ -5,59 +5,68 @@
 		<title></title>
 		<style>
 			*{
-				padding: 0;
 				margin: 0;
+				padding: 0;
 			}
 			html,body{
 				width: 100%;
 				height: 100%;
 			}
 			body{
-				background: url(img/bj1.jpg);
+				background: url(img/bj1.jpg) no-repeat;
 				background-size: 100%;
 			}
+			
 			div{
 				width: 280px;
 				height: 400px;
 				position: fixed;
 				top: 0;
-				bottom: 0;
 				left: 0;
+				bottom: 0;
 				right: 0;
 				margin: auto;
 				transform-style: preserve-3d;
 				animation: play 60s linear infinite;
-				
 			}
 			div img{
 				width: 280px;
 				height: 400px;
-				position: absolute;
+				position:absolute;
 			}
 			div img:nth-child(1){transform: rotateY(0deg) translatez(600px);}
-			div img:nth-child(2){transform: rotateY(80deg) translatez(600px);}
-			div img:nth-child(3){transform: rotateY(160deg) translatez(600px);}
-			div img:nth-child(4){transform: rotateY(240deg) translatez(600px);}
-			div img:nth-child(5){transform: rotateY(300deg) translatez(600px);}
+			div img:nth-child(2){transform: rotateY(50deg) translatez(600px);}
+			div img:nth-child(3){transform: rotateY(100deg) translatez(600px);}
+			div img:nth-child(4){transform: rotateY(150deg) translatez(600px);}
+			div img:nth-child(5){transform: rotateY(200deg) translatez(600px);}
+			div img:nth-child(6){transform: rotateY(250deg) translatez(600px);}
+			div img:nth-child(7){transform: rotateY(300deg) translatez(600px);}
+			
+			
+			
 			
 			@keyframes play{
-					0%{
+				0%{
 					transform: rotateX(0deg) rotateY(0deg);
 				}
 				25%{
-					transform: rotateX(12deg) rotateY(180deg);
+					transform: rotateX(10deg) rotateY(180deg);
 				}
 				50%{
 					transform: rotateX(0deg) rotateY(360deg);
 				}
 				75%{
-					transform: rotateX(-12deg) rotateY(540deg);
+					transform: rotateX(-10deg) rotateY(540deg);
 				}
 				100%{
 					transform: rotateX(0deg) rotateY(720deg);
 				}
 			}
-		</style>
+			
+			
+			
+		</style>	
+		
 	</head>
 	<body>
 		<div>
@@ -66,8 +75,11 @@
 			<img src="img/3.jpg" />
 			<img src="img/4.jpg" />
 			<img src="img/5.jpg" />
+			<img src="img/6.jpg" />
+			<img src="img/7.jpg" />
+			
 		</div>
-		<audio src="raw/song.mp3" autoplay="autoplay"></audio>
+		<audio src="raw/Marry You.mp3" autoplay="autoplay"></audio>
 		<img src="img/a.gif" />
 	</body>
 </html>
